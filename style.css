@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: "poppins"
+}
+body{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 15px;
+}
+img{
+  padding-right: 15px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+p{
+  font-family: sans-serif;
+}
+div{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 15px ;
+}
+svg{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  opacity: 50%;
+  right: 30px;
+  top: 0;
+}
+
+.g1{
+  position: relative;
+  color: white;
+  background: #733fc8;
+  grid-column: span 2;
+}
+div span{
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  font: bold;
+}
+div h4{
+  font-weight: 700;
+  
+}
+.g2{
+  color: white;
+  background: #49556b;
+}
+.g3{
+  grid-row: span 2;
+}
+.g3 span{
+  color: black;
+  font-weight: 700;
+}
+.g5{
+  color: white;
+  background: #1a222f;
+  grid-column: span 2;
+}
+.g4 p>span{
+  color: black;
+}
+.g4 span{
+  color: black;
+}
+.g1,.g2,.g3,.g4,.g5{
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.4);
+}
+@media(max-width :1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
